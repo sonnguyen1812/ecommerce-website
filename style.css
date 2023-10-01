@@ -114,7 +114,6 @@ body {
 #hero button {
   background-image: url("img/button.png");
   background-color: transparent;
-  color: #3E6765;
   border: 0;
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
@@ -123,8 +122,16 @@ body {
   font-size: 16px;
 }
 
+#hero button:hover {
+  color: #3E6765;
+}
+
 #product1 {
   text-align: center;
+}
+
+#product1 h2{
+  margin: 20px;
 }
 
 #product1 .pro-container {
@@ -135,19 +142,20 @@ body {
 }
 
 #product1 .pro{
-  width: 23%;
+  width: 22%;
   min-width: 250px;
   padding: 10px 12px;
   border: 1px solid #cce7d0;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.11);
   margin: 15px 0;
   transition: 0.2s ease;
+  position: relative;
 }
 
 #product1 .pro:hover{
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 #product1 .pro img {
@@ -165,7 +173,7 @@ body {
 }
 
 #product1 .pro .description span {
-  color: gray;
+  color: #606063;
   font-size: 14px;
 }
 
@@ -176,6 +184,30 @@ body {
 
 #product1 .pro .description i{
   color: rgb(235, 190, 76);
+}
+
+#product1 .pro .description h4 {
+  padding-top:  7px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3E6765;
+}
+
+#product1 .pro .cart {
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  border-radius: 50px;
+  background-color: #e3e6f3;
+  color: #3E6765;
+  position: absolute;
+  bottom: 50px;
+  right: 25px;
+}
+
+#product1 .pro .cart:hover {
+  color: #2eafa9;
+  box-shadow: 0px 0px 20px #2eafa9;
 }
 
 #page-header{
