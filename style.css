@@ -76,11 +76,6 @@ body {
     left: 0;
 }
 
-#header a {
-    width: 700px;
-    height: auto;
-}
-
 #navbar {
     display: flex;
     align-items: center;
