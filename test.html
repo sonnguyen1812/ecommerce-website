@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+        />
+        <title>Document</title>
+        <style>
+            .all {
+                color: aliceblue;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+            }
+            .logo {
+                margin-left: 10px;
+                margin-top: 10px;
+                width: 200px;
+            }
+            .tk {
+                width: 400px;
+                height: 25px;
+                border: rgb(0, 0, 0) 2px solid;
+                margin: 0px 0px 15px 200px;
+                border-radius: 10px;
+            }
+            button {
+                height: 29px;
+                width: 50px;
+                border: 2px rgb(0, 0, 0) solid;
+                border-radius: 10px;
+            }
+            button:hover {
+                background-color: rgb(0, 255, 30);
+            }
+            h2 {
+                background-color: rgb(68, 68, 68);
+                font-size: 30px;
+                text-align: center;
+            }
+            .content video {
+                width: 100%;
+                height: auto;
+                border: black solid 1px;
+            }
+            @media (max-width: 700px) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+            @media (min-width: ) {
+                body {
+                    background-color: rgb(96, 96, 94);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="all">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(function () {
+                    $("#menu").load("menu.html");
+                });
+            </script>
+            <div id="menu"></div>
+
+            <div class="content">
+                <h2>VIDEO</h2>
+                <iframe
+                    width="600"
+                    height="400"
+                    src="https://www.youtube.com/embed/dz6xe0xXqYE"
+                    title='14. Anh Đã Ổn Hơn - RPT MCK | "99%" the album'
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+                <h2>AUDIO</h2>
+                <audio controls>
+                    <source src="./TryAgain.mp3" />
+                </audio>
+                <h2>Ảnh</h2>
+                <img style="width: 300px" src="./cat.jpg" alt="" />
+
+                <h2>Thông tin thiết bị:</h2>
+                <p id="deviceInfo"></p>
+                <script>
+                    let deviceInfo =
+                        "Loại thiết bị: " +
+                        navigator.userAgent +
+                        "<br>" +
+                        "Độ phân giải màn hình: " +
+                        screen.width +
+                        "x" +
+                        screen.height +
+                        "<br>" +
+                        "Loại hệ điều hành: " +
+                        navigator.platform;
+
+                    document.getElementById("deviceInfo").innerHTML =
+                        deviceInfo;
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
